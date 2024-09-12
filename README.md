@@ -71,3 +71,52 @@ is a powerful JavaScript runtime environment that enables you to execute JavaScr
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+
+## Getting Started with Node.js Development
+
+This summary outlines the initial steps for running Node.js code and introduces the concept of the global object.
+
+**Installation:**
+
+1. Download and install Node.js from the official website: [https://nodejs.org/en](https://nodejs.org/en)
+
+**Verification:**
+
+2. Open your terminal and check the installed versions:
+
+   - `node -v`: verifies Node.js version.
+   - `npm -v`: verifies npm (Node Package Manager) version.
+
+**Writing Code:**
+
+3. Node REPL (Read-Eval-Print-Loop):
+
+   - Open your terminal and type `node`.
+   - You can write and execute JavaScript code directly inside the REPL, similar to a browser console.
+
+4. Code in VScode:
+
+   - Create a project folder and open it in VScode.
+   - Create a JavaScript file named `app.js` within the project folder.
+   - Write your JavaScript code inside `app.js`.
+
+5. Running Code:
+
+   - Open your terminal again (separate from the REPL).
+   - Navigate to your project directory using the `cd` command.
+   - Run your code using `node app.js`.
+
+**Global Object:**
+
+- **Browser vs. Node.js:**
+
+  - The browser uses the `window` object as the global object.
+  - Node.js uses the `global` object, similar to `window` but not part of the V8 engine.
+
+- **Global this:**
+  - Introduced in ECMAScript 2020, `globalThis` provides a standardized way to access the global object across different environments (browsers, Node.js, etc.).
+  - In browsers, `globalThis` is equivalent to `window`.
+  - In Node.js, `globalThis` is equivalent to `global`.
+
+// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------

@@ -5,10 +5,12 @@ const data = require("./data");
 
 var name = "Namaste Node 🚀";
 
-let a = 10;
+var a = 10;
 let b = 20;
+let c = {};
 
 calculateSum(a, b);
 multiply(a, b);
 
-console.log(data);
+// console.log(data);
+console.log(setTimeout === globalThis.setTimeout);
