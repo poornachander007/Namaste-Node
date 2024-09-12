@@ -1,7 +1,9 @@
 require("./xyz");
-const { multiply } = require("./calculate/multiply");
-const { calculateSum } = require("./calculate/sum");
-const data = require("./data");
+// const { multiply } = require("./calculate/multiply");
+// const { calculateSum } = require("./calculate/sum");
+// const data = require("./data");
+
+const { calculateSum, multiply } = require("./calculate");
 
 var name = "Namaste Node 🚀";
 
@@ -13,4 +15,4 @@ calculateSum(a, b);
 multiply(a, b);
 
 // console.log(data);
-console.log(setTimeout === globalThis.setTimeout);
+// console.log(setTimeout === globalThis.setTimeout);

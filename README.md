@@ -120,3 +120,48 @@ This summary outlines the initial steps for running Node.js code and introduces 
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+
+## Node.js Modules: Importing and Exporting Code
+
+This summary covers essential concepts for managing code in Node.js projects using modules.
+
+**Modules**:
+
+- Separate files containing reusable JavaScript code.
+- Organize projects and improve code maintainability.
+
+**CommonJS Modules (CJS):**
+
+- Default module system in Node.js.
+- Synchronous loading: next line executes after module is loaded.
+- Non-strict mode: allows loose variable declaration.
+
+**ES Modules (ESM):**
+
+- Modern module system with advantages:
+  - Asynchronous loading: allows for more efficient code execution.
+  - Strict mode: enforces stricter parsing and error handling.
+- Requires configuration in `package.json` for use.
+- Syntax: `export` and `import` keywords.
+
+**Importing and Exporting:**
+
+- `require(path)` function used for CJS imports.
+- `module.exports` object used to export values from a module.
+  - Can export single or multiple values as an object.
+  - Destructuring assignment for cleaner import.
+- `.mjs` extension commonly used for ES modules.
+
+**Additional Points:**
+
+- Nested modules: organize related files within a folder.
+- Importing JSON data using `require`.
+- Built-in modules like `util` provide additional functionality.
+
+**Overall:**
+
+- Modules promote code reusability, maintainability, and scalability.
+- Understanding module systems is crucial for Node.js development.
+
+// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
