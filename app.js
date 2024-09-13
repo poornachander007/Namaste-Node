@@ -7,12 +7,17 @@ const { calculateSum, multiply } = require("./calculate");
 
 var name = "Namaste Node 🚀";
 
-var a = 10;
+var p = 10;
 let b = 20;
 let c = {};
 
-calculateSum(a, b);
-multiply(a, b);
+calculateSum(b, p);
+multiply(b, p);
 
 // console.log(data);
 // console.log(setTimeout === globalThis.setTimeout);
+
+console.log(Object.keys(globalThis));
+// for (const property in global) {
+//   console.log(property, global[property]);
+// }
